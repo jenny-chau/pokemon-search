@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(255, 245, 193);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-title {
+    color: rgb(47, 47, 47);
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+#inputValue {
+    width: 20em;
+    height: 2em;
+    margin: 20px;
+}
+
+#display-pokemon-info {
+    visibility: hidden;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#display-pokemon-info > p {
+    margin: 0;
+}
+
+#submitBtn:hover, #resetBtn:hover {
+    transform: scale(1.1);
+}
+
+#submitBtn, #resetBtn {
+    font-family: inherit;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="page-title">Pokemon Search</h1>
+    <p id="page-description">Look up simple data about any pokemon below!</p>
+    <input id="inputValue" type="text" placeholder="Enter Pokemon Name">
+    <div class="btns">
+        <button id="submitBtn" onclick="searchPokemon()" type="submit">Search</button>
+        <button id="resetBtn" type="reset" onclick="resetPokemonValue()">Reset</button>
+    </div>
+    <div id="display-pokemon-info"></div>
+    
+    <script src="search.js"></script>
+</body>
+</html>
