@@ -24,12 +24,13 @@ const displayData = function (error, data) {
         `;
     } else {
         const name = data.name;
-        const type = data['types']['0']['type']['name'];
-
+        const type = data.types.map(t => t['type']['name']);
+        const typeUpper = type.map(t => t.charAt(0).toUpperCase() + t.slice(1))
+        
         displayElement.innerHTML = `
             <img src="${data.sprites.front_default}" placeholder="${data.name} image">
             <p><strong>Name:</strong> ${name.charAt(0).toUpperCase() + name.slice(1)}</p>
-            <p><strong>Type:</strong> ${type.charAt(0).toUpperCase() + type.slice(1)}</p>
+            <p><strong>Type:</strong> ${typeUpper.join(", ")}</p>
         `; //Capitalizes first letter of name and type
         
         resetPokemonValue();
